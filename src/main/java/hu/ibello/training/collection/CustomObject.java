@@ -21,5 +21,17 @@ public class CustomObject implements Comparable<CustomObject> {
 		return value;
 	}
 	
+	@Override
+	public int hashCode() {
+		return value.substring(1).hashCode();
+	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof CustomObject) {
+			CustomObject c = (CustomObject)obj;
+			return value.substring(1).equals(c.value.substring(1));
+		}
+		return false;
+	}
 }
