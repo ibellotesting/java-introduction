@@ -4,9 +4,9 @@ public enum CarType {
 
 	// A lehetséges értékek:
 	
-	SEDAN("Családok számára komfortos"),
-	SUV("Családi terepjáró"),
-	SPORTS("Nagy sebesség és teljesítmény");
+	SEDAN	("Családok számára komfortos"),
+	SUV		("Családi terepjáró"),
+	SPORTS	("Nagy sebesség és teljesítmény");
 	
 	// Mezők:
 	
@@ -22,5 +22,9 @@ public enum CarType {
 	
 	public String getDescription() {
 		return description;
+	}
+	
+	public String getUpperCaseDescription() {
+		return description.toUpperCase();
 	}
 }

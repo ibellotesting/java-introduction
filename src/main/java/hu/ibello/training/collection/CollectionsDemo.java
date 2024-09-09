@@ -59,7 +59,7 @@ public class CollectionsDemo {
 		Collections.fill(list, 10);
 		log("feltöltött", list);
 		
-		// diszjunkt elllenőrzés
+		// diszjunkt ellenőrzés
 		boolean disjoint = Collections.disjoint(list, singletonList);
 		System.out.println("Nincs közös elem: " + disjoint);
 	}
